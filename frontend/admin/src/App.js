@@ -14,7 +14,11 @@ import SalesExecutiveHome from "./Components/SalesExecutive/SalesExecutiveHome";
 import DeliveryDriverHome from "./Components/DeliveryDriver/DeliveryDriverHome";
 import ViewProfileDD from "./Components/DeliveryDriver/DeliveryDriverViewProfile";
 import ViewProfileSE from "./Components/SalesExecutive/SalesExecutiveViewProfile";
-
+import ApplyForLeaveSE from "./Components/SalesExecutive/ApplyForLeaveSE";
+import ApplyForLeaveDD from "./Components/DeliveryDriver/ApplyForLeaveDD";
+import ViewLeaveSE from "./Components/SalesExecutive/SalesExecutiveViewLeave";
+import ViewLeaveDD from "./Components/DeliveryDriver/DeliveryDriverViewLeave";
+import AllLeave from "./Components/Employee/AllLeaves";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -45,6 +49,11 @@ function App() {
         <Route exact path="/ddhome" element={<DeliveryDriverHome />} />
         <Route exact path="/viewse" element={<ViewProfileSE />} />
         <Route exact path="/viewdd" element={<ViewProfileDD />} />
+        <Route exact path="/applyse" element={<ApplyForLeaveSE />} />
+        <Route exact path="/applydd" element={<ApplyForLeaveDD />} />
+        <Route exact path="/allleave" element={<AllLeave />} />
+        <Route exact path="/leavese" element={<ViewLeaveSE />} />
+        <Route exact path="/leavedd" element={<ViewLeaveDD />} />
         </Routes>
     </Router>
     </div>
