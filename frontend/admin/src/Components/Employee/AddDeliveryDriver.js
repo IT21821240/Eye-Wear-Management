@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import AdminDashBoard from "./AdminDashBoard";
 
-
-
 function AddDeliveryDriver() {
   const [did, setDid] = useState("");
   const [fullname, setFullname] = useState("");

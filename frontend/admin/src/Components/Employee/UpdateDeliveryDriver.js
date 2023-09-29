@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import AdminDashBoard from "./AdminDashBoard";
-import Footer from "./Footer";
 export default function UpdateDeliveryDriver() {
   const [Id, setId] = useState();
   const [did, setDid] = useState("");
@@ -297,7 +296,6 @@ export default function UpdateDeliveryDriver() {
           </main>
         </div>
       </div>
-      <Footer></Footer>
     </div>
   );
 }

@@ -157,16 +157,6 @@ function AdminSideBar() {
                     <a className="nav-link" style={{color:"white"}} href="/supplier">
                       View Suppliers
                     </a>
-                    <a class="nav-link" style={{color:"white"}} href="/addsupplierTransaction">
-                      Add Supplier Transaction
-                    </a>
-                    <a className="nav-link" style={{color:"white"}}href="/supplierTransaction">
-                      View Supplier Transactions
-                    </a>
-
-                    <a className="nav-link" style={{color:"white"}}href="/inventoryReport">
-                      Inventory Report
-                    </a>
 
                     <div
                       class="collapse"
@@ -204,7 +194,6 @@ function AdminSideBar() {
                     id="sidenavAccordionPages"
                   >
                     
-
                     <a className="nav-link" style={{color:"white"}}href="/DeliveryList">
                       View Delivery
                     </a>
@@ -310,9 +299,6 @@ function AdminSideBar() {
                     </a>
                     <a class="nav-link" style={{color:"white"}}href="http://localhost:3000/bills">
                       Bills
-                    </a>
-                    <a className="nav-link" style={{color:"white"}}href="http://localhost:3000/analytics">
-                      Analytics
                     </a>
 
                     <div
