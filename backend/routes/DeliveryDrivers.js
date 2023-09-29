@@ -1,5 +1,4 @@
-const express = require("express");
-const router = express.Router();
+const router = require("express").Router();
 const DeliveryDriver = require("../models/deliverydriver"); //import delivery driver model
 const bcrypt = require("bcrypt")
 const nodemailer = require("nodemailer");
@@ -21,7 +20,7 @@ router.post("/adddd", async (req, res) => {
   const nic = req.body.nic;
   const basicsalary = Number(req.body.basicsalary);
   const image = req.body.image;
-  var msg = "You are now an employee of LuxuryX. Your username is " + email + " and password is " + password
+  var msg = "You are now an employee of LankaOpticals. Your username is " + email + " and password is " + password
 
   try {
     const preuser = await DeliveryDriver.findOne({ email: email }); //check whether the email address already exists

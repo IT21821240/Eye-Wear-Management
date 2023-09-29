@@ -18,7 +18,7 @@ router.post("/addse", async (req, res) => {
   const basicsalary = Number(req.body.basicsalary);
   const gender = req.body.gender;
   const image = req.body.image;
-  var msg = "You are now an employee of LuxuryX. Your username is " + email + " and password is " + password
+  var msg = "You are now an employee of LankaOpticals. Your username is " + email + " and password is " + password
  
 
   try {
