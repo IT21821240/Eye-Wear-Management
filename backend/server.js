@@ -35,14 +35,17 @@ app.listen(PORT, () =>{
     console.log(`Server is running on PORT number: ${PORT}`)
 })
 
-const salesexecutiveRouter = require('./routes/SalesExecutives');
+const salesexecutiveRouter = require('./routes/SalesExecutives.js');
 app.use("/salesexecutive",salesexecutiveRouter);
 
-const deliverydriverRouter = require ('./routes/DeliveryDrivers');
+const deliverydriverRouter = require ('./routes/DeliveryDrivers.js');
 app.use("/deliverydriver",deliverydriverRouter);
 
-const adminRouter = require ('./routes/Admin');
+const adminRouter = require ('./routes/Admin.js');
 app.use("/admin",adminRouter);
 
-const loginRouter = require('./routes/Logins');
+const loginRouter = require('./routes/Logins.js');
 app.use("/login",loginRouter);
+
+const leaveRouter = require("./routes/LeaveApplications.js");
+app.use("/leave",leaveRouter);
