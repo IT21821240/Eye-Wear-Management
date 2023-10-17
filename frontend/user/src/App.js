@@ -1,11 +1,27 @@
-
-import './App.css';
+import "./App.css";
+import "./paymentComponent/Payment.css";
+import "font-awesome/css/font-awesome.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import FormSwitcher from "./paymentComponent/FormSwitcher";
+import Displaypage from "./pages/Display";
+import Header from "./header&Footer/Header";
+import Footer from "./header&Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
-    </div>
+    <>
+      <Header />
+      <div>
+        <Router>
+          <Routes>
+            <Route exact path="/" element={<Displaypage />} />
+            <Route exact path="/checkout/:value" element={<FormSwitcher />} />
+          </Routes>
+        </Router>
+      </div>
+      <Footer />
+    </>
   );
 }
 
